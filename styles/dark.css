@@ -11,3 +11,17 @@
   --is-light: visible;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+    --bg-image: url("../images/cover-image-dark.png");
+    --general-color: #ff0070;
+    --general-color-opacity: #ff007066;
+    --text-color: #f1b2ce;
+    --decoration-color: var(--general-color);
+    --bg-color: #000028;
+    --title1-color: #db00ff;
+    --title2-color: var(--general-color);
+    --title3-color: var(--bg-color);
+    --is-light: visible;
+  }
+}

@@ -11,3 +11,17 @@
   --is-light: hidden;
 }
 
+@media (prefers-color-scheme: light) {
+    :root {
+    --bg-image: url("../images/cover-image-light.png");
+    --general-color: #ff8dcb;
+    --general-color-opacity: #32312d66;
+    --text-color: #353430;
+    --decoration-color: var(--text-color);
+    --bg-color: #fff1f7;
+    --title1-color: #ffc2e6;
+    --title2-color: var(--text-color);
+    --title3-color: var(--text-color);
+    --is-light: hidden;
+  }
+}
