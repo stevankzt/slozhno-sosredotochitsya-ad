@@ -3,7 +3,7 @@
   --general-color: #ff0070;
   --general-color-opacity: #ff007066;
   --text-color: #f1b2ce;
---decoration-color: var(--general-color);
+  --decoration-color: var(--general-color);
   --bg-color: #000028;
   --title1-color: #db00ff;
   --title2-color: var(--general-color);

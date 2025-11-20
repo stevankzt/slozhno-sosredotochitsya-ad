@@ -1,6 +1,7 @@
 .page {
   font-family: var(--font-family);
   background-color: var(--bg-color);
+  background-attachment: fixed;
 }
 
 .decorated-zone::before {
@@ -48,7 +49,6 @@
     grid-template-columns: repeat(2, auto);
     gap: 10px;
     block-size: 25px;
-    justify-self: end;
     color: var(--general-color);
     font-size: var(--regular-font-size);
     text-transform: uppercase;
@@ -194,11 +194,11 @@
     align-self: center;
     color: var(--title1-color);
     text-shadow: 2px 2px 0 var(--general-color);
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    font-size: var(--display-title-size);
     line-height: var(--title-line-height);
   }
 
-  @media (width >= 768px){
+  @media (width >= 768px) {
     :root {
       --display-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
@@ -234,11 +234,11 @@
       grid-column: 2 / 3;
     }
 
-    .topic:nth-child(2) .topic__card{
+    .topic:nth-child(2) .topic__card {
       grid-column: 1 / 4;
     }
 
-    .topic > .title_decor{
+    .topic > .title_decor {
       grid-column: 2 / 3;
     }
 
@@ -340,12 +340,12 @@
       grid-row: span 1;
     }
 
-    .topic:nth-child(2) .topic__card{
+    .topic:nth-child(2) .topic__card {
       grid-row: 2 / 3 ;
       grid-column: span 1;
     }
 
-    .topic > .title_decor{
+    .topic > .title_decor {
       grid-column: 2 / 4;
     }
   }
